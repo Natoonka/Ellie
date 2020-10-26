@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: 89.5}
+  m_AnchoredPosition: {x: 330, y: 102}
   m_SizeDelta: {x: 181.6, y: 30.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58900072
@@ -203,13 +203,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 1706890335}
   m_HandleRect: {fileID: 1259117911}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598969356}
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &128645532
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +905,7 @@ GameObject:
   - component: {fileID: 480757430}
   - component: {fileID: 480757429}
   m_Layer: 5
-  m_Name: Controls text
+  m_Name: Options text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,8 +927,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243.3, y: 164.75}
-  m_SizeDelta: {x: 233.5, y: 75.5}
+  m_AnchoredPosition: {x: -252.73, y: 164.75}
+  m_SizeDelta: {x: 214.55, y: 75.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480757429
 MonoBehaviour:
@@ -937,7 +948,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Controls
+  m_text: Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1006,7 +1017,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 480757429}
-    characterCount: 8
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -1072,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.1, y: -173.7}
+  m_AnchoredPosition: {x: -245.31, y: -169.7}
   m_SizeDelta: {x: 199.7, y: 34.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489290199
@@ -1120,7 +1131,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598969356}
+        m_MethodName: SetFullscreen
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &598969351
 GameObject:
@@ -1134,6 +1156,7 @@ GameObject:
   - component: {fileID: 598969354}
   - component: {fileID: 598969353}
   - component: {fileID: 598969352}
+  - component: {fileID: 598969356}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1226,6 +1249,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &598969356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598969351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb60e763a03e39d41861711fefe18068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: a06c69b9dae24364885af2e211e42416, type: 2}
 --- !u!1 &964170434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,9 +1405,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 303, y: 87.8}
+  m_AnchoredPosition: {x: 299, y: 110}
   m_SizeDelta: {x: 178.5, y: 33.4}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5377331, y: 0.5}
 --- !u!114 &1092245045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,15 +1615,28 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Option A
+    - m_Text: Low
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Medium
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: High
+      m_Image: {fileID: 0}
+    - m_Text: Ultra
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598969356}
+        m_MethodName: SetQuality
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1114371308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2608,7 +2657,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: Low
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2677,10 +2726,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1824945423}
-    characterCount: 8
+    characterCount: 3
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -2817,7 +2866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: -173.7}
+  m_AnchoredPosition: {x: 243, y: -169.7}
   m_SizeDelta: {x: 199.7, y: 34.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997889267

@@ -5,61 +5,52 @@ using TMPro;
 
 public class StartScript : MonoBehaviour
 {
-    [SerializeField] public TextMeshProUGUI nameText;
     [SerializeField] public TextMeshProUGUI dialogueText;
+    [SerializeField] public TextMeshProUGUI nameText;
 
-    public Animator animatorD;
+    private Queue<string> sentences;
+    private Queue<string> names;
 
     public StartDialogue dialogue;
-
-    private Queue<string> names;
-    private Queue<string> sentences;
 
     // Start is called before the first frame update
     void Start()
     {
-        names = new Queue<string>();
         sentences = new Queue<string>();
-        StartDialogue(dialogue);
+        names = new Queue<string>();
+        StartTheTalk(dialogue);
     }
 
-    public void StartDialogue(StartDialogue dialogue)
+    void StartTheTalk(StartDialogue dialogue)
     {
-        animatorD.SetBool("IsOpen", true);
-
-        names.Clear();
         sentences.Clear();
 
-        foreach (string name in dialogue.names)
-        {
-            names.Enqueue(name);
-        }
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        
+        foreach (string name in dialogue.names)
+        {
+            names.Enqueue(name);
+        }
         DisplayNextSentence();
-
     }
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
         {
-            EndDialogue();
+            End();
             return;
         }
 
-        string name = names.Dequeue();
         string sentence = sentences.Dequeue();
+        string name = names.Dequeue();
 
-        nameText.text = name;
         dialogueText.text = sentence;
+        nameText.text = name;
     }
-    public void EndDialogue()
+    public void End()
     {
-        animatorD.SetBool("IsOpen", false);
         Application.LoadLevel("PokojEllie");
     }
-
 }

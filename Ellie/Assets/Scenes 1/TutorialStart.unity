@@ -270,7 +270,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928614514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3ebb35e7a73da7e40ac03435b789a77d, type: 2}
   m_CullingMode: 0
@@ -941,11 +941,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c44d2b6805da4642a6fa6fe1155e84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 1109560257}
   dialogueText: {fileID: 1199401983}
-  animatorD: {fileID: 928614516}
+  nameText: {fileID: 1109560257}
   dialogue:
-    names: []
+    names:
+    - Mom
+    - Ellie
+    - Ellie
+    - Ellie
+    - Ellie
+    - Ellie
     sentences:
     - Ellie, my dear! The dinner is ready! Come downstairs!
     - Coming, mommy!

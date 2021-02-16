@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MenuScript : MonoBehaviour
 {
-    //[System.Obsolete]
+    [System.Obsolete]
     public void ChangeScene(string sceneName)
     {
         Application.LoadLevel(sceneName);

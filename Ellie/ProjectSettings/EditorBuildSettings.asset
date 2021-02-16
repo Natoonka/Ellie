@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes 1/Menu.unity
     guid: e4a1d6e5152c78b459a8ec711294f0fa
   - enabled: 1
-    path: Assets/Scenes 1/OptionsMenu.unity
-    guid: 38ec25b3a8e80194f9b2b9ba7b8b007a
-  - enabled: 1
-    path: Assets/Scenes 1/TutorialStart.unity
-    guid: 3348d196ed458954fba4d97cabdda8ee
-  - enabled: 1
     path: Assets/Scenes 1/PokojEllie.unity
     guid: 495372345766d2f4a9da5ebba7a17394
   - enabled: 1
@@ -23,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes 1/DemoEndMama.unity
     guid: a280f6842879b0e4caa8d2c168613cf0
+  - enabled: 1
+    path: Assets/Scenes 1/OptionsMenu.unity
+    guid: 38ec25b3a8e80194f9b2b9ba7b8b007a
   m_configObjects: {}

@@ -702,18 +702,18 @@ MonoBehaviour:
     - When you were done your dad came and you ate the dinner.
     - You helped your mom with cleaning and then you went on the walk.
     - The day was beautiful. You don't think, that anything could ruin it.
-    - END OF PROLOGUE
-    - Now, a quick note.
+    - END OF TUTORIAL
+    - Now the real game will begin.
     - Remember, that every action has its consequences.
     - You have chosen to be a nice kid and ask your mother for help instead of looking
       for another, maybe illegal for you way out.
     - Your next actions may have a big influence on what happens next.
     - Be sure to try and be a good kid through all the gameplay, it will surely repay
       in the future.
-    - For now it's the end.
-    - 'We hope you liked the gameplay.
-
-      :)'
+    - For now I will end breaking the fourth wall and let you play.
+    - The night has fallen. Your mom read you a story and you fell asleep.
+    - You woke up later in the night and something was off...
+    - So you decided to check it.
 --- !u!4 &825914496
 Transform:
   m_ObjectHideFlags: 0

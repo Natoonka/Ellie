@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class DialogueDoor : MonoBehaviour
 {
     public Dialogue dialogue1, dialogue2;
     public Item item;

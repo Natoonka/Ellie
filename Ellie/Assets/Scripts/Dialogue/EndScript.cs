@@ -42,6 +42,6 @@ public class EndScript : MonoBehaviour
     }
     public void End()
     {
-        Application.LoadLevel("Menu");
+        Application.LoadLevel("RoomNight");
     }
 }

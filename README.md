@@ -5,3 +5,6 @@ Our game. I'm doing this repository because of my practice superviser. We hope i
 .
 .
 [ISN'T AND WON'T BE FINISHED, SO WE'RE PUBLISHING THE REPOSITORY]
+Authors:
+Natalia Kostecka - programmer, game designer
+Wiktoria Tomczyk - graphic
